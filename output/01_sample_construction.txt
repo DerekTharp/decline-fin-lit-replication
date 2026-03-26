@@ -1,0 +1,24 @@
+Loading 2010 fat file...
+Module participants: 1,837
+
+Scoring summary (all module participants, n=1,837):
+  finlit7 mean: 63.1%  sd: 21.8
+  compound_interest        :  70.8% correct  (81 DK)
+  inflation                :  81.4% correct  (63 DK)
+  stock_vs_mutualfund      :  64.3% correct  (326 DK)
+  highest_returns          :  54.5% correct  (141 DK)
+  company_stock            :  65.7% correct  (81 DK)
+  foreign_stocks           :  56.0% correct  (82 DK)
+  bond_interest            :  48.8% correct  (153 DK)
+
+Loading RAND longitudinal file...
+RAND file: 45,234 respondents
+
+Merge: 1,837 matched, 0 unmatched
+
+Sample size verification:
+  Age 60+ with finlit:         1,126  (Finke: 1,109, diff: +17)
+  Age 60+ with finlit + cog:   907  (Finke: 887, diff: +20)
+
+Saved: /Users/derektharp/Documents/_Projects/26.36 CogDecline-FinLit Replication (MS)/data/analytic_2010_age60plus.parquet
+  n=1,126, columns=39

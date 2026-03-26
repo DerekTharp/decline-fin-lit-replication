@@ -1,0 +1,166 @@
+Loading data...
+Analysis sample: n=1,033
+
+======================================================================
+  1. COHORT BIN WIDTH SENSITIVITY
+======================================================================
+
+  Cohort_3-year (n=1,033, R2=0.195)
+    age                          -0.880 (0.677)
+    tr20_level                    1.445 (0.434)***
+    tr20_change                 -12.142 (39.131)
+
+  Cohort_5-year (baseline) (n=1,033, R2=0.192)
+    age                          -0.329 (0.442)
+    tr20_level                    1.411 (0.433)***
+    tr20_change                 -17.582 (38.994)
+
+  Cohort_10-year (n=1,033, R2=0.192)
+    age                          -0.466 (0.225)**
+    tr20_level                    1.409 (0.432)***
+    tr20_change                 -16.068 (38.697)
+
+======================================================================
+  2. ITEM-LEVEL ANALYSIS
+======================================================================
+  Which financial literacy items are predicted by cog level vs slope?
+
+  Item_compound_interest (n=1,033, R2=0.126)
+    age                          -0.945 (0.952)
+    tr20_level                    1.694 (0.934)*
+    tr20_change                 -27.514 (84.089)
+
+  Item_inflation (n=1,033, R2=0.068)
+    age                           0.681 (0.835)
+    tr20_level                    1.443 (0.819)*
+    tr20_change                -104.159 (73.691)
+
+  Item_stock_vs_mutualfund (n=1,033, R2=0.109)
+    age                          -1.405 (1.004)
+    tr20_level                    1.730 (0.985)*
+    tr20_change                 -59.387 (88.635)
+
+  Item_highest_returns (n=1,033, R2=0.133)
+    age                          -0.248 (1.014)
+    tr20_level                    3.020 (0.994)***
+    tr20_change                  81.029 (89.496)
+
+  Item_company_stock (n=1,033, R2=0.051)
+    age                          -0.003 (1.021)
+    tr20_level                    2.545 (1.002)**
+    tr20_change                  81.583 (90.155)
+
+  Item_foreign_stocks (n=1,033, R2=0.017)
+    age                          -0.470 (1.076)
+    tr20_level                   -0.501 (1.056)
+    tr20_change                 -17.308 (95.038)
+
+  Item_bond_interest (n=1,033, R2=0.028)
+    age                           0.087 (1.076)
+    tr20_level                   -0.052 (1.055)
+    tr20_change                 -77.318 (94.961)
+
+======================================================================
+  3. SUBSAMPLE ANALYSES
+======================================================================
+
+  Sub_Males_only (n=458, R2=0.208)
+    age                          -0.213 (0.590)
+    tr20_level                    0.891 (0.630)
+    tr20_change                 -33.454 (55.116)
+
+  Sub_Females_only (n=575, R2=0.168)
+    age                          -0.344 (0.651)
+    tr20_level                    1.683 (0.601)***
+    tr20_change                  -7.107 (55.888)
+
+  Sub_College_plus (n=226, R2=0.182)
+    age                           1.570 (0.916)*
+    tr20_level                   -0.044 (1.015)
+    tr20_change                -115.246 (90.316)
+
+  Sub_No_college (n=807, R2=0.164)
+    age                          -0.774 (0.504)
+    tr20_level                    1.625 (0.481)***
+    tr20_change                  13.267 (44.184)
+
+  Sub_Stock_owners (n=273, R2=0.181)
+    age                           0.918 (0.819)
+    tr20_level                    0.891 (0.814)
+    tr20_change                  39.084 (80.244)
+
+  Sub_Non_stock_owners (n=760, R2=0.162)
+    age                          -0.837 (0.529)
+    tr20_level                    1.720 (0.520)***
+    tr20_change                 -23.236 (45.993)
+
+======================================================================
+  4. MINIMUM WAVES SENSITIVITY
+======================================================================
+  Re-estimates the mixed-effects trajectory model with different
+  minimum-wave thresholds, then re-runs the core regression.
+
+  Re-estimating tr20 trajectories with min_waves=3...
+
+  MinWaves_3 (n=1,033, R2=0.192)
+    age                          -0.329 (0.442)
+    tr20_level                    1.411 (0.433)***
+    tr20_change                 -17.582 (38.994)
+
+  Re-estimating tr20 trajectories with min_waves=4...
+
+  MinWaves_4 (n=929, R2=0.183)
+    age                          -0.233 (0.477)
+    tr20_level                    1.355 (0.474)***
+    tr20_change                  -5.974 (27.603)
+
+  Re-estimating tr20 trajectories with min_waves=5...
+
+  MinWaves_5 (n=901, R2=0.183)
+    age                          -0.195 (0.485)
+    tr20_level                    1.269 (0.481)***
+    tr20_change                  -8.937 (26.187)
+
+  Re-estimating tr20 trajectories with min_waves=6...
+
+  MinWaves_6 (n=844, R2=0.188)
+    age                          -0.129 (0.504)
+    tr20_level                    1.321 (0.498)***
+    tr20_change                  -2.670 (25.961)
+
+======================================================================
+  5. INTERACTION TESTS FOR HETEROGENEITY
+======================================================================
+  Pooled models with interaction terms testing whether cognitive-level
+  effects differ by gender, education, or stock ownership.
+
+  Interaction_tr20_x_male (n=1,033, R2=0.193)
+    tr20_level                    1.635 (0.506)***
+    tr20_x_male                  -0.582 (0.681)
+
+  Interaction_tr20_x_college (n=1,033, R2=0.192)
+    tr20_level                    1.504 (0.465)***
+    tr20_x_college               -0.507 (0.915)
+
+  Interaction_tr20_x_stock (n=1,033, R2=0.194)
+    tr20_level                    1.739 (0.488)***
+    tr20_x_stock                 -1.155 (0.795)
+
+======================================================================
+  6. WITHIN-PERSON FINANCIAL LITERACY CHANGE (2010→2016)
+======================================================================
+  Loading 2016 fat file...
+  2016 respondents with Big 3 scored: 3,368
+  Matched to 2010 analysis sample: 121
+
+  Within-person Big 3 change (2010→2016):
+    Mean 2010: 2.22
+    Mean 2016: 1.98
+    Mean change: -0.24
+    SD change: 0.89
+
+  Within_person_Big3 (n=121, R2=0.149)
+    tr20_level                   -0.116 (0.059)*
+    tr20_change                 -11.254 (5.492)**
+
+Saved: /Users/derektharp/Documents/_Projects/26.36 CogDecline-FinLit Replication (MS)/output/06_robustness.csv

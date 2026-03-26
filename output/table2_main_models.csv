@@ -1,0 +1,8 @@
+,coef,coef,coef,coef,coef,coef,coef,coef,pvalue,pvalue,pvalue,pvalue,pvalue,pvalue,pvalue,pvalue,se,se,se,se,se,se,se,se
+model,M1_age_only,M2_age_controls,M3_age_cohortFE,M4_cog_level_only,M5_cog_slope_only,M6_full,M7_ser7,M8_both,M1_age_only,M2_age_controls,M3_age_cohortFE,M4_cog_level_only,M5_cog_slope_only,M6_full,M7_ser7,M8_both,M1_age_only,M2_age_controls,M3_age_cohortFE,M4_cog_level_only,M5_cog_slope_only,M6_full,M7_ser7,M8_both
+variable,,,,,,,,,,,,,,,,,,,,,,,,
+age,-0.44602,-0.39462,-0.24376,,,-0.32915,-0.20258,-0.28222,0.0,0.0,0.58128,,,0.4563,0.64569,0.52339,0.08551,0.08381,0.44184,,,0.44167,0.4405,0.4421
+ser7_change,,,,,,,13.24971,24.87009,,,,,,,0.83487,0.69816,,,,,,,63.54464,64.11108
+ser7_level,,,,,,,1.93914,1.1508,,,,,,,0.00846,0.13956,,,,,,,0.73504,0.7783
+tr20_change,,,,,-72.69257,-17.58212,,-19.82782,,,,,0.04004,0.65216,,0.61512,,,,,35.35631,38.99363,,39.42403
+tr20_level,,,,1.47575,,1.41129,,1.1428,,,,0.00017,,0.00116,,0.01256,,,,0.39081,,0.4333,,0.45704

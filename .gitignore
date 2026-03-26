@@ -1,0 +1,26 @@
+# Raw HRS data (restricted access -- cannot redistribute)
+HRS/
+
+# Intermediate data files (generated from restricted data)
+data/
+
+# Manuscript drafts and submission materials
+manuscript/
+submission/
+
+# Project internals
+CLAUDE.md
+do.log
+finke2017.pdf
+
+# OS and Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# Stata artifacts
+*.smcl
+
+# Editor artifacts
+.vscode/
+*.swp

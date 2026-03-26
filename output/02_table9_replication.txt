@@ -1,0 +1,117 @@
+Loaded n=1,126 (age 60+)
+  Controls sample: n=1,126
+  Cognition sample: n=907
+
+======================================================================
+  TABLE 9 REPLICATION
+======================================================================
+
+--- Col1_age_univar (n=1,126, R2=0.019, adj-R2=0.018) ---
+  age                               -0.374 (0.080)***
+
+--- Col2_agecat_univar (n=1,126, R2=0.023, adj-R2=0.018) ---
+  age_65-69                         -2.645 (2.077)
+  age_70-74                         -2.844 (1.939)
+  age_75-79                         -2.446 (2.119)
+  age_80-84                         -6.495 (2.656)**
+  age_85-89                         -8.810 (2.915)***
+  age_90+                          -17.804 (4.168)***
+
+--- Col3_age_controls (n=1,126, R2=0.174, adj-R2=0.166) ---
+  educ_lt_hs                        -5.735 (1.824)***
+  educ_some_college                  3.545 (1.647)**
+  educ_college_plus                  7.107 (1.784)***
+  age                               -0.357 (0.079)***
+  male                               6.909 (1.290)***
+  white                              5.826 (1.535)***
+  married                           -0.970 (1.470)
+  homeowner                          3.067 (1.673)*
+  stock_owner                        5.020 (1.608)***
+  tax_sheltered                      3.724 (1.443)***
+  high_income                        1.795 (1.763)
+  high_wealth                       -1.718 (1.763)
+
+--- Col4_agecat_controls (n=1,126, R2=0.177, adj-R2=0.164) ---
+  age_65-69                         -1.545 (1.943)
+  age_70-74                         -1.635 (1.841)
+  age_75-79                         -1.893 (2.035)
+  age_80-84                         -7.080 (2.511)***
+  age_85-89                         -8.802 (2.770)***
+  age_90+                          -13.463 (3.984)***
+  educ_lt_hs                        -5.633 (1.831)***
+  educ_some_college                  3.809 (1.655)**
+  educ_college_plus                  7.636 (1.806)***
+  male                               6.801 (1.292)***
+  white                              5.688 (1.536)***
+  married                           -1.005 (1.475)
+  homeowner                          2.731 (1.686)
+  stock_owner                        5.026 (1.612)***
+  tax_sheltered                      3.481 (1.452)**
+  high_income                        2.207 (1.777)
+  high_wealth                       -1.879 (1.770)
+
+--- Col5_age_cog (n=907, R2=0.177, adj-R2=0.164) ---
+  educ_lt_hs                        -4.126 (2.020)**
+  educ_some_college                  1.959 (1.864)
+  educ_college_plus                  5.116 (2.109)**
+  age                               -0.300 (0.106)***
+  word_recall                        0.280 (0.233)
+  vocabulary                         1.245 (0.386)***
+  male                               8.008 (1.491)***
+  white                              4.383 (1.771)**
+  married                           -1.214 (1.662)
+  homeowner                          2.870 (1.868)
+  stock_owner                        4.354 (1.789)**
+  tax_sheltered                      4.042 (1.644)**
+  high_income                        1.677 (2.099)
+  high_wealth                       -1.442 (1.997)
+
+--- Col6_agecat_cog (n=907, R2=0.181, adj-R2=0.164) ---
+  age_65-69                          0.918 (3.554)
+  age_70-74                          0.697 (3.482)
+  age_75-79                          0.751 (3.625)
+  age_80-84                         -4.134 (3.922)
+  age_85-89                         -5.056 (4.169)
+  age_90+                           -9.755 (5.079)*
+  educ_lt_hs                        -4.105 (2.029)**
+  educ_some_college                  2.155 (1.869)
+  educ_college_plus                  5.540 (2.127)***
+  word_recall                        0.226 (0.236)
+  vocabulary                         1.264 (0.386)***
+  male                               7.964 (1.496)***
+  white                              4.042 (1.790)**
+  married                           -1.285 (1.665)
+  homeowner                          2.478 (1.884)
+  stock_owner                        4.496 (1.794)**
+  tax_sheltered                      3.826 (1.653)**
+  high_income                        2.007 (2.116)
+  high_wealth                       -1.570 (2.003)
+
+======================================================================
+  AGE COEFFICIENT ATTENUATION
+======================================================================
+
+  Definition A: univariate -> cognition-adjusted (n=907)
+    Univariate age:      -0.333
+    With cog + controls: -0.300
+    Attenuation:         10.1%  (Finke: ~41%)
+
+  Definition B: controls-only -> controls+cognition (same sample)
+    Controls only:       -0.366
+    With cog + controls: -0.300
+    Attenuation:         18.1%
+
+======================================================================
+  COGNITION VARIABLE AUDIT
+======================================================================
+
+  Correlations with finlit_pct (cognition sample, n=907):
+  Variable                                            r     Finke
+  r10tr20 (total recall 0-20)                     0.167      0.25
+  r10imrc (immediate recall 0-10)                 0.159          
+  r10dlrc (delayed recall 0-10)                   0.154          
+  r10cogtot (total cognition 0-35)                0.241          
+  r10ser7 (serial 7s 0-5)                         0.255          
+  vocabulary (r10vocab 0-10)                      0.246      0.29
+
+Saved: /Users/derektharp/Documents/_Projects/26.36 CogDecline-FinLit Replication (MS)/output/02_table9_replication.csv

@@ -1,0 +1,87 @@
+Loading longitudinal cognition data...
+Loaded: 120,950 person-wave rows, 26,715 persons
+
+============================================================
+  TRAJECTORY MODEL: Total word recall (0-20)
+============================================================
+
+  Persons with 3+ waves: 20,814
+  Total observations: 112,261
+  Mean waves per person: 5.4
+
+  Fitting mixed-effects model...
+    tr20 ~ age_c, random = ~age_c | hhidpn
+
+  Fixed effects:
+    Intercept (mean tr20 at age 70): 9.442
+    age_c (mean annual change): -0.1474
+  Random effects covariance:
+    Var(intercept): 5.1870
+    Var(slope):     0.003821
+    Cov(int,slope): -0.003612
+  Residual variance: 5.7039
+  Log-likelihood: -276337.2
+
+  Distribution of person-specific annual change (tr20):
+    Mean:   -0.1474
+    SD:     0.0201
+    Min:    -0.2380
+    Q25:    -0.1597
+    Median: -0.1475
+    Q75:    -0.1354
+    Max:    -0.0330
+    Declining (tr20_change < 0): 20,814 (100.0%)
+
+  Distribution of person-specific level at age 70 (tr20):
+    Mean:   9.44
+    SD:     2.00
+
+============================================================
+  TRAJECTORY MODEL: Serial 7s (0-5)
+============================================================
+
+  Persons with 3+ waves: 20,814
+  Total observations: 112,261
+  Mean waves per person: 5.4
+
+  Fitting mixed-effects model...
+    ser7 ~ age_c, random = ~age_c | hhidpn
+
+  Fixed effects:
+    Intercept (mean ser7 at age 70): 3.426
+    age_c (mean annual change): -0.0209
+  Random effects covariance:
+    Var(intercept): 1.7135
+    Var(slope):     0.001139
+    Cov(int,slope): 0.013940
+  Residual variance: 1.0975
+  Log-likelihood: -188192.4
+
+  Distribution of person-specific annual change (ser7):
+    Mean:   -0.0209
+    SD:     0.0128
+    Min:    -0.0709
+    Q25:    -0.0270
+    Median: -0.0199
+    Q75:    -0.0122
+    Max:    0.0292
+    Declining (ser7_change < 0): 20,219 (97.1%)
+
+  Distribution of person-specific level at age 70 (ser7):
+    Mean:   3.43
+    SD:     1.19
+
+Saved: /Users/derektharp/Documents/_Projects/26.36 CogDecline-FinLit Replication (MS)/data/cognitive_slopes.parquet
+  20,814 persons with trajectory estimates
+
+============================================================
+  VALIDATION: Slope correlates with education and age
+============================================================
+
+  tr20:
+    r(level, education years): 0.415  (expect positive)
+    r(slope, education years): -0.095  (expect ~0 or small positive)
+
+  ser7:
+    r(level, education years): 0.478  (expect positive)
+    r(slope, education years): 0.284  (expect ~0 or small positive)

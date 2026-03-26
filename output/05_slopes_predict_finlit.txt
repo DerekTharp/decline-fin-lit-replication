@@ -1,0 +1,146 @@
+Loading analytic datasets...
+  Financial literacy sample (age 60+): 1,126
+  Persons with cognitive slopes: 20,814
+  Merged (inner join): 1,033
+  Analysis sample (non-missing controls + trajectories): 1,033
+
+  Cognitive slope descriptives (analysis sample):
+    tr20_level          : mean=9.7327, sd=1.9573
+    tr20_change         : mean=-0.1461, sd=0.0191
+    ser7_level          : mean=3.5765, sd=1.1661
+    ser7_change         : mean=-0.0187, sd=0.0116
+
+  Birth cohort distribution:
+    1910-1914: n=2
+    1915-1919: n=21
+    1920-1924: n=62
+    1925-1929: n=89
+    1930-1934: n=164
+    1935-1939: n=252
+    1940-1944: n=223
+    1945-1949: n=188
+    1950-1954: n=32
+
+======================================================================
+  CORE MODELS: Cognitive Slopes Predict Financial Literacy
+======================================================================
+
+--- M1_age_only (n=1,033, R2=0.026, adj-R2=0.025) ---
+  age                          -0.446 (0.086)***
+
+--- M2_age_controls (n=1,033, R2=0.177, adj-R2=0.167) ---
+  educ_lt_hs                   -5.590 (1.912)***
+  educ_some_college             3.411 (1.713)**
+  educ_college_plus             7.006 (1.895)***
+  age                          -0.395 (0.084)***
+  male                          6.918 (1.352)***
+  white                         4.475 (1.640)***
+  married                      -1.040 (1.543)
+  homeowner                     2.636 (1.790)
+  stock_owner                   5.410 (1.661)***
+  tax_sheltered                 4.441 (1.511)***
+  high_income                   2.002 (1.856)
+  high_wealth                  -1.724 (1.840)
+
+--- M3_age_cohortFE (n=1,033, R2=0.180, adj-R2=0.164) ---
+  educ_lt_hs                   -5.751 (1.927)***
+  educ_some_college             3.559 (1.726)**
+  educ_college_plus             7.383 (1.928)***
+  age                          -0.244 (0.442)
+  male                          6.804 (1.360)***
+  white                         4.562 (1.652)***
+  married                      -1.204 (1.556)
+  homeowner                     2.502 (1.809)
+  stock_owner                   5.442 (1.670)***
+  tax_sheltered                 4.316 (1.528)***
+  high_income                   2.118 (1.873)
+  high_wealth                  -1.956 (1.852)
+
+--- M4_cog_level_only (n=1,033, R2=0.191, adj-R2=0.175) ---
+  educ_lt_hs                   -4.288 (1.953)**
+  educ_some_college             2.805 (1.726)
+  educ_college_plus             5.881 (1.956)***
+  tr20_level                    1.476 (0.391)***
+  male                          8.240 (1.405)***
+  white                         3.782 (1.650)**
+  married                      -1.223 (1.540)
+  homeowner                     1.985 (1.799)
+  stock_owner                   5.282 (1.658)***
+  tax_sheltered                 3.798 (1.524)**
+  high_income                   1.639 (1.865)
+  high_wealth                  -1.946 (1.838)
+
+--- M5_cog_slope_only (n=1,033, R2=0.183, adj-R2=0.167) ---
+  educ_lt_hs                   -5.447 (1.929)***
+  educ_some_college             3.524 (1.723)**
+  educ_college_plus             7.060 (1.930)***
+  tr20_change                 -72.693 (35.356)**
+  male                          7.109 (1.366)***
+  white                         4.321 (1.649)***
+  married                      -1.165 (1.547)
+  homeowner                     2.344 (1.805)
+  stock_owner                   5.508 (1.666)***
+  tax_sheltered                 4.140 (1.528)***
+  high_income                   1.915 (1.873)
+  high_wealth                  -2.108 (1.850)
+
+--- M6_full (n=1,033, R2=0.192, adj-R2=0.174) ---
+  educ_lt_hs                   -4.213 (1.957)**
+  educ_some_college             2.823 (1.729)
+  educ_college_plus             5.860 (1.957)***
+  tr20_level                    1.411 (0.433)***
+  tr20_change                 -17.582 (38.994)
+  age                          -0.329 (0.442)
+  male                          8.284 (1.407)***
+  white                         3.829 (1.652)**
+  married                      -1.325 (1.546)
+  homeowner                     2.037 (1.802)
+  stock_owner                   5.255 (1.661)***
+  tax_sheltered                 3.783 (1.525)**
+  high_income                   1.581 (1.867)
+  high_wealth                  -2.047 (1.843)
+
+--- M7_ser7 (n=1,033, R2=0.187, adj-R2=0.170) ---
+  educ_lt_hs                   -3.952 (2.013)**
+  educ_some_college             3.116 (1.727)*
+  educ_college_plus             6.612 (1.940)***
+  ser7_level                    1.939 (0.735)***
+  ser7_change                  13.250 (63.545)
+  age                          -0.203 (0.440)
+  male                          6.230 (1.369)***
+  white                         3.567 (1.678)**
+  married                      -1.237 (1.550)
+  homeowner                     2.204 (1.806)
+  stock_owner                   5.365 (1.664)***
+  tax_sheltered                 3.964 (1.528)***
+  high_income                   1.861 (1.870)
+  high_wealth                  -1.872 (1.847)
+
+--- M8_both (n=1,033, R2=0.195, adj-R2=0.175) ---
+  educ_lt_hs                   -3.353 (2.017)*
+  educ_some_college             2.682 (1.730)
+  educ_college_plus             5.654 (1.961)***
+  tr20_level                    1.143 (0.457)**
+  tr20_change                 -19.828 (39.424)
+  ser7_level                    1.151 (0.778)
+  ser7_change                  24.870 (64.111)
+  age                          -0.282 (0.442)
+  male                          7.648 (1.448)***
+  white                         3.311 (1.675)**
+  married                      -1.329 (1.545)
+  homeowner                     1.925 (1.802)
+  stock_owner                   5.241 (1.660)***
+  tax_sheltered                 3.635 (1.527)**
+  high_income                   1.519 (1.867)
+  high_wealth                  -1.978 (1.842)
+
+======================================================================
+  DECOMPOSITION OF THE AGE-FINLIT GRADIENT
+======================================================================
+
+  Age coefficient progression (same sample, n=1,033):
+    M2 (age + controls):                    -0.395
+    M3 (+ cohort FE):                       -0.244  (+38.2% vs M2)
+    M6 (+ cohort FE + cog level + slope):   -0.329  (+16.6% vs M2)
+
+Saved: /Users/derektharp/Documents/_Projects/26.36 CogDecline-FinLit Replication (MS)/output/05_slopes_predict_finlit.csv
